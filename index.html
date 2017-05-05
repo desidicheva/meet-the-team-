@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Meet the team without bootstrap</title>
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+	
+	.title, .name, .email, .info{
+		text-align:center;
+	}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+   font-size:1.2em;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+	
+	.headline{
+		text-align:center;
+		font-size:2em;
+	}
+</style>
+</head>
+
+<body>
+
+<h2 class="headline">Meet The Team</h2>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="desi.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2 class="name">Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p class="info">I am the founder of the company. </p>
+        <p class="email">dessdesigns@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div><!-- close container-->
+    </div><!-- close card-->
+  </div><!-- close col-->
+
+  <div class="column">
+    <div class="card">
+      <img src="desi.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2 class="name">Jane Doe</h2>
+        <p class="title">Art Director</p>
+        <p class="info">I am the Art Director.</p>
+        <p class="email">dessdesigns@gmail.com</p>
+         <p><button class="button">Contact</button></p>
+      </div><!--close container-->
+    </div><!-- close card-->
+  </div><!--close col-->
+  
+  <div class="column">
+    <div class="card">
+      <img src="desi.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2  class="name">Jane Dow</h2>
+        <p class="title">Designer</p>
+        <p class="info">I am the web designer and developer.</p>
+        <p class="email">dessdesigns@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div><!-- clsoe container-->
+    </div><!-- close card-->
+  </div><!-- close column-->
+
+  
+</div><!-- close row-->
+
+</body>
+</html>
